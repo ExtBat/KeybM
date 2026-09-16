@@ -58,12 +58,3 @@ Both modes can be held together — their effects multiply.
 | `Program.cs` | Entry point |
 
 To change the key for an action, edit only `Keybinds.cs`. To change the sound for an event, edit only `SoundBoard.cs`.
-
-## Requirements
-
-- Windows (uses `user32.dll` and `winmm.dll`).
-- .NET with `System.Windows.Forms` support (needed for `Application.Run()`'s message loop, which the hook relies on).
-
-## Running
-
-Build and run as a regular console/Windows application. The program doesn't create a visible window and runs in the background until closed (double Esc) or the process is terminated.
